@@ -1,38 +1,100 @@
-.App {
+body{
+  background-color: whitesmoke;
+  font-size: 1rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+h1, h2{
   text-align: center;
+  font-family:'Times New Roman', Times, serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.contenido, div.contenidoPeli{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: auto;
+  flex-wrap: row wrap;
+  justify-content: space-evenly;
 }
 
-.App-link {
-  color: #61dafb;
+div.contenidoPeli{
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.contenedor{
+  border: 1px solid black;
+  width: 45%;
+  min-width: 280px;
+  min-height: 500px;
+  margin-bottom: 1rem;
 }
+
+form .elemento  {
+  margin: 0.5rem 10%;
+}
+
+form .elemento input{
+  width: 90%;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.3rem 0.3rem;
+  font-size: 1rem;
+  font-family:'Times New Roman', Times, serif;
+}
+
+form .boton{
+  color: black;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 30%;
+  margin: 0 35% 1rem;
+  text-align: center;
+  padding: 0.5rem 1rem;
+
+}
+.boton:hover{
+  color: whitesmoke;
+  background-color: black;
+  
+}
+
+.pelicula{
+  width: 90%;
+  padding: 1rem;
+  margin: auto;
+  border: 1px solid black;
+}
+
+.nombre{
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.genero{
+  font-size: 0.8rem;
+}
+.descripcion{
+  font-size: 1rem;
+
+}
+
+.botonesControl{
+  display: flex;
+  margin: auto;
+  flex-wrap: row wrap;
+  justify-content: space-evenly;
+}
+.botonesControl span{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 0.3rem;
+  background-color: whitesmoke;
+  color: black;
+  
+}
+
+.botonesControl span:hover{
+  background-color: black;
+  color: whitesmoke ;
+}
+
